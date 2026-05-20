@@ -1,0 +1,404 @@
+/* TinyDot Studio — landing page
+   Palette derived from Play Store header: warm yellow #FFC93C + cream + ink */
+
+:root {
+    --bg: #FFFBF0;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --yellow: #FFC93C;
+    --yellow-deep: #F5B400;
+    --cream: #FFF4D6;
+    --line: #E8E0C8;
+    --accent: #2E3A8C;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+/* ─── HERO ───────────────────────────────────────────────── */
+
+.hero {
+    background: var(--yellow);
+    color: var(--ink);
+    padding: 32px 32px 0;
+    position: relative;
+    overflow: hidden;
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 64px;
+}
+
+.brand {
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.brand-mark {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    background: var(--ink);
+    color: var(--yellow);
+    padding: 10px 14px;
+    border-radius: 999px;
+    display: inline-block;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-links a {
+    color: var(--ink);
+    text-decoration: none;
+    opacity: 0.78;
+    transition: opacity 0.15s;
+}
+
+.nav-links a:hover { opacity: 1; }
+
+.hero-content {
+    max-width: 1080px;
+    margin: auto auto 80px;
+    width: 100%;
+    padding: 0;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 24px;
+}
+
+.hero-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(48px, 8vw, 96px);
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin-bottom: 24px;
+    max-width: 14ch;
+}
+
+.hero-title em {
+    font-style: italic;
+    font-weight: 500;
+    background: linear-gradient(180deg, transparent 60%, rgba(255,255,255,0.55) 60%);
+    padding: 0 4px;
+}
+
+.hero-sub {
+    font-size: clamp(17px, 2vw, 22px);
+    max-width: 32ch;
+    opacity: 0.78;
+    margin-bottom: 40px;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--ink);
+    color: var(--yellow);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 16px 28px;
+    border-radius: 999px;
+    transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.hero-bridges {
+    width: 100%;
+    height: 80px;
+    margin-top: auto;
+}
+
+.hero-bridges svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* ─── SECTIONS ───────────────────────────────────────────── */
+
+section {
+    padding: 96px 0;
+}
+
+.section-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 48px;
+}
+
+/* ─── GAMES ──────────────────────────────────────────────── */
+
+.games { background: var(--bg); }
+
+.game-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    align-items: start;
+    padding: 40px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 24px;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.game-icon img {
+    border-radius: 24px;
+    display: block;
+}
+
+.game-title {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.game-tagline {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.game-desc {
+    margin-bottom: 20px;
+    color: var(--ink-soft);
+    max-width: 56ch;
+}
+
+.game-meta {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.badge {
+    background: var(--cream);
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+.game-cta {
+    display: inline-block;
+    background: var(--ink);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 12px 22px;
+    border-radius: 999px;
+    transition: transform 0.15s;
+}
+
+.game-cta:hover { transform: translateY(-2px); }
+
+.coming-soon {
+    margin-top: 32px;
+    text-align: center;
+    color: var(--ink-soft);
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* ─── ABOUT ──────────────────────────────────────────────── */
+
+.about { background: var(--cream); }
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    gap: 72px;
+}
+
+.about p {
+    color: var(--ink-soft);
+    margin-bottom: 16px;
+    max-width: 42ch;
+}
+
+.about-values {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.value-num {
+    display: inline-block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+    letter-spacing: 0.1em;
+}
+
+.value h4 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 6px;
+    letter-spacing: -0.01em;
+}
+
+.value p {
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 38ch;
+    margin: 0;
+}
+
+/* ─── CONTACT ────────────────────────────────────────────── */
+
+.contact { background: var(--bg); }
+
+.contact-lede {
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin-bottom: 40px;
+    max-width: 44ch;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 640px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 24px 28px;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.15s, transform 0.15s;
+}
+
+.contact-card:hover {
+    border-color: var(--yellow-deep);
+    transform: translateY(-2px);
+}
+
+.contact-label {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+}
+
+.contact-value {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* ─── FOOTER ─────────────────────────────────────────────── */
+
+.footer {
+    background: var(--ink);
+    color: rgba(255,255,255,0.7);
+    padding: 32px 0;
+    font-size: 14px;
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.footer-brand {
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 900;
+    color: var(--yellow);
+    font-size: 18px;
+}
+
+/* ─── RESPONSIVE ─────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .container { padding: 0 24px; }
+    .hero { padding: 24px 24px 0; min-height: auto; }
+    .nav { padding-bottom: 48px; }
+    .nav-links { gap: 18px; font-size: 14px; }
+    .hero-content { margin: 40px 0; }
+    .hero-title { font-size: clamp(40px, 11vw, 60px); }
+
+    section { padding: 64px 0; }
+
+    .game-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 28px;
+    }
+    .game-icon img { width: 96px; height: 96px; }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+}
