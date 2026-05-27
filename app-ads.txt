@@ -6,6 +6,7 @@ ironsrc.com, 654499, DIRECT
 
 # Unity Ads Direct
 unity.com, 9518553, DIRECT, 96cabb5fbdde37a7
+unity.com, 20812864, DIRECT, 96cabb5fbdde37a7
 
 # Resellers (merged ironSource Exchange + Unity Ads, deduplicated)
 across.com, 001pg00001dtxmwian, RESELLER
