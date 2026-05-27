@@ -103,7 +103,7 @@ risecodes.com, 68d54e2fe125150001dd91e2, RESELLER
 rubiconproject.com, 13380, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 15268, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 15526, RESELLER, 0bfd66d529a55807
-rubiconproject.com, 15854, RESELLER
+rubiconproject.com, 15854, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 17062, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 17328, RESELLER, 0bfd66d529a55807
 rubiconproject.com, 17476, RESELLER, 0bfd66d529a55807
