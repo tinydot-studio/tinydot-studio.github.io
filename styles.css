@@ -195,6 +195,31 @@ section {
     display: block;
 }
 
+/* Placeholder icon for games without a shipped icon asset yet */
+.game-icon-ph {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 900;
+    font-size: 52px;
+    color: #fff;
+    line-height: 1;
+    user-select: none;
+}
+
+.game-icon-ph.ph-lightup {
+    background: linear-gradient(145deg, var(--yellow) 0%, var(--yellow-deep) 100%);
+    color: var(--ink);
+}
+
+.game-icon-ph.ph-connect {
+    background: linear-gradient(145deg, var(--accent) 0%, #1c2560 100%);
+}
+
 .game-title {
     font-family: 'Fraunces', Georgia, serif;
     font-weight: 700;
@@ -392,6 +417,7 @@ section {
         padding: 28px;
     }
     .game-icon img { width: 96px; height: 96px; }
+    .game-icon-ph { width: 96px; height: 96px; font-size: 42px; }
 
     .about-grid {
         grid-template-columns: 1fr;
